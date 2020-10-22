@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.3 on win32)" generated="20201022 01:29:06.949" rpa="false">
+<suite id="s1" name="Testcase" source="C:\Users\Andrés\Google Drive\abastt@gmail.com\Proyectos\rf\robotkernel\notebooks\testcase.robot">
+<test id="s1-t1" name="Buscar en Google">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.google.com.uy/</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20201022 01:29:07.202" level="INFO">Opening browser 'firefox' to base url 'https://www.google.com.uy/'.</msg>
+<msg timestamp="20201022 01:29:07.203" level="INFO">Firefox driver log is always forced to to: C:\Users\Andrés\Google Drive\abastt@gmail.com\Proyectos\rf\robotkernel\notebooks\geckodriver-1.log</msg>
+<status status="PASS" starttime="20201022 01:29:07.202" endtime="20201022 01:29:17.784"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>robotframework</arg>
+</arguments>
+<msg timestamp="20201022 01:29:17.786" level="INFO">Typing text 'robotframework' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20201022 01:29:17.785" endtime="20201022 01:29:18.283"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20201022 01:29:18.287" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20201022 01:29:18.615" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20201022 01:29:18.615" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20201022 01:29:18.286" endtime="20201022 01:29:18.692"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>robotframework</arg>
+</arguments>
+<status status="PASS" starttime="20201022 01:29:18.693" endtime="20201022 01:29:18.747"></status>
+</kw>
+<status status="PASS" starttime="20201022 01:29:07.201" endtime="20201022 01:29:18.748" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201022 01:29:06.953" endtime="20201022 01:29:18.750"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Testcase">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
